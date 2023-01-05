@@ -7,7 +7,7 @@ This repository contains install/uninstall scripts for kubernetes 1.20-00 cluste
 ## Getting started
 
 ### Install master node
-* clone repository to master node
+* Clone repository to master node
 ```
 $ git clone https://github.com/krunivs/k8s_starter.git
 ```
@@ -23,21 +23,21 @@ API_SERVER_IP=$(hostname -I | cut -d' ' -f1)
 WORKERS=("10.0.0.207")
 ```
 
-* install docker and kubernetes packages
+* Install docker and kubernetes packages
 ```
 $ cd [path-to-project-root]/install
 $ ./install-k8s-pkg.sh
 ```
 
 
-* install master node
+* Install master node
 ```
 $ cd [path-to-project-root]/install
 $ ./install-master
 ```
 
 
-* deploy worker node's install scripts
+* Deploy worker node's install scripts
 ```
 $ cd [path-to-project-root]/install
 $ ./deploy-worker-installer.sh
@@ -45,14 +45,14 @@ $ ./deploy-worker-installer.sh
 
 ### Install worker node
 
-* connect worker node's ssh and install docker and kubernetes packages
+* Access worker node's ssh and install docker and kubernetes packages
 ```
 $ cd /root/kubernetes/install
 $ ./install-k8s-pkg.sh
 ```
 
 
-* join to master node
+* Join to master node
 ```
 $ cd /root/kubernetes/install
 $ ./join-master.sh
