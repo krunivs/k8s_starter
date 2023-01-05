@@ -33,7 +33,7 @@ $ ./install-k8s-pkg.sh
 * Install master node
 ```
 $ cd [path-to-project-root]/install
-$ ./install-master
+$ ./install-master.sh
 ```
 
 
